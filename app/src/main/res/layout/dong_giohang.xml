@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageviewgiohang"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/textviewtengiohang"
+            android:textColor="#10100f"
+            android:text="Tên món hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:text="Giá món hàng"
+            android:textSize="15sp"
+            android:id="@+id/textviewgiagiohang"
+            android:textColor="#f20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonminus"
+                android:text="-"
+                android:focusable="false"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonvalues"
+                android:text="1"
+                android:background="@null"
+                android:focusable="false"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonplus"
+                android:text="+"
+                android:focusable="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
